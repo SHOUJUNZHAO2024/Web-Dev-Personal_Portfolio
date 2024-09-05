@@ -1,0 +1,156 @@
+/*
+    Name: SHOUJUN ZHAO
+    File Name: styles.css
+    Date: June 29, 2024
+    Description: CSS styles for the portfolio website
+*/
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Styling for the header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+/* Navigation bar styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 2rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+/* Main content styling */
+main {
+    flex: 1;
+    padding: 2rem;
+}
+/* Footer styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+/* Introduction section styling */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.intro-text {
+    flex: 1;
+    max-width: 700px;
+    margin-right: 2rem;
+    font-size: 130%;
+}
+.intro-image {
+    flex: 1;
+    max-width: 700px;
+    text-align: center;
+}
+/* Responsive image styling */
+.responsive-img {
+    display: block;
+    width: 100%;
+    max-width: 700px; /* Optional: set a max-width to control the maximum size */
+    height: auto;
+    margin: 0 auto;
+}
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    margin-top: 1rem;
+}
+form input, form textarea {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%; /* Make input fields take full width */
+    max-width: 600px; /* Set a maximum width for the input fields */
+}
+form textarea {
+    height: 150px; /* Set a height for the textarea */
+}
+form button {
+    width: 20%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+}
+form button:hover {
+    background-color: #388e3c; /* Darker green background color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+/* Project container styling */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-text {
+    margin-bottom: 2rem;
+    text-align: left;
+    max-width: 800px;
+}
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.project-images img {
+    width: 100%;
+    max-width: 800px; /* Set a max-width for the project images */
+    height: auto;
+}
+/*Buttons styling*/
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.navigation-buttons button {
+    width: 100px; 
+    height: 40px; 
+    padding: 0.5rem 1rem; 
+    font-size: 1rem; 
+    background-color: #4CAF50;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-top: 1rem; 
+}
+/* Individual project styling */
+.project {
+    display: none;
+}
+.project.active {
+    display: block;
+}
